@@ -1,1 +1,19 @@
 HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar as mensagens de solicitação que serão enviadas ao servidor. O servidor então segue as regras do HTTP para interpretar a solicitação e formatar mensagens de resposta. Além de solicitar ou transferir o conteúdo solicitado, as mensagens HTTP contêm informações extras sobre o cliente e o servidor envolvidos, sobre o conteúdo em si e até mesmo sobre sua indisponibilidade.
+
+
+> HTTP:
+
+  Inseguro: Os dados são transferidos em texto simples, o que significa que podem ser interceptados e lidos por terceiros.
+  Velocidade: Geralmente, é mais rápido que o HTTPS, pois não há criptografia envolvida.
+  Porta: Utiliza a porta 80.
+  URL: Começa com "http://".
+  Uso: Adequado para sites que não lidam com informações confidenciais.
+
+> HTTPS:
+
+  Seguro: Os dados são criptografados, protegendo-os contra interceptação e manipulação.
+  Confiabilidade: A criptografia garante a autenticidade do site, aumentando a confiança do usuário.
+  SEO: O Google prioriza sites HTTPS nos resultados de pesquisa.
+  Porta: Utiliza a porta 443.
+  URL: Começa com "https://".
+  Uso: Essencial para sites que lidam com informações confidenciais, como dados bancários, senhas e informações pessoais.
