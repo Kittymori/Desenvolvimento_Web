@@ -1,0 +1,2 @@
+Configuração Manual e DHCP
+A configuração manual de IPs, máscara de sub-rede, gateway e DNS é prática em pequenas redes, mas pode ser complicada em redes maiores. Nesse caso, é recomendável usar o serviço DHCP (Dynamic Host Configuration Protocol), que automatiza a atribuição desses parâmetros.
