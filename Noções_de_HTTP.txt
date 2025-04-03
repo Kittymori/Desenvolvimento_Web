@@ -18,6 +18,18 @@ HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar
   URL: Começa com "https://".
   Uso: Essencial para sites que lidam com informações confidenciais, como dados bancários, senhas e informações pessoais.
 
-MENSAGEM DE SOLICITAÇÃO (mensagem.png):
+MENSAGEM DE SOLICITAÇÃO (mensagemGET.png):
 
   A primeira palavra da primeira linha identifica o método HTTP. Ele define qual operação o cliente deseja executar no servidor. O método GET informa ao servidor que o cliente solicita o recurso que o segue: /pt/. Tanto o cliente quanto o servidor podem suportar mais de uma versão do protocolo HTTP, portanto a versão a ser adotada na troca de dados também é fornecida na primeira linha: HTTP/1.1.
+
+O campo de cabeçalho User-Agent contém detalhes sobre o programa cliente que está fazendo a solicitação. Este campo pode ser usado pelo servidor para adaptar a resposta às necessidades de um cliente específico, mas é mais frequentemente empregado para produzir estatísticas sobre os clientes que usam o servidor.
+
+O campo Accept tem um valor mais imediato, pois informa ao servidor o formato do recurso solicitado. Se o formato do recurso for indiferente para o cliente, o campo Accept pode especificar */* como formato.
+
+MENSAGEM DE SOLICITAÇÃO (mensagemPOST.png):
+
+Quando os dados são compostos por mais do que campos curtos de texto, é mais apropriado enviálos no corpo de dados da mensagem. Neste caso, deve-se utilizar o método HTTP POST para que o servidor receba e processe o corpo de dados da mensagem, de acordo com as especificações indicadas no cabeçalho da solicitação. Quando o método POST é usado, o cabeçalho da solicitação deve fornecer o tamanho da carga que será enviada e a maneira como o corpo é formatado.
+
+O campo Content-Length indica o tamanho em bytes da carga (corpo de dados) e o campo Content-
+
+Type indica seu formato. O formato multipart/form-data é o mais comumente usado em formulários HTML tradicionais que empregam o método POST. Nesse formato, cada campo inserido no corpo de dados da solicitação é separado pelo código indicado pela palavra-chave boundary. O método POST deve ser usado apenas quando apropriado, pois ele usa uma quantidade de dados um pouco maior do que uma solicitação equivalente feita com o método GET. Como o método GET envia os parâmetros diretamente no cabeçalho da mensagem de solicitação, a troca de dados total tem uma latência menor, pois não é necessária uma etapa de conexão adicional para transmitir o corpo da mensagem.
