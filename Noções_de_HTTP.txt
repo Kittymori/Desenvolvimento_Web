@@ -17,3 +17,7 @@ HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar
   Porta: Utiliza a porta 443.
   URL: Começa com "https://".
   Uso: Essencial para sites que lidam com informações confidenciais, como dados bancários, senhas e informações pessoais.
+
+MENSAGEM DE SOLICITAÇÃO (mensagem.png):
+
+  A primeira palavra da primeira linha identifica o método HTTP. Ele define qual operação o cliente deseja executar no servidor. O método GET informa ao servidor que o cliente solicita o recurso que o segue: /pt/. Tanto o cliente quanto o servidor podem suportar mais de uma versão do protocolo HTTP, portanto a versão a ser adotada na troca de dados também é fornecida na primeira linha: HTTP/1.1.
