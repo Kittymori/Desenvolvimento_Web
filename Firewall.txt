@@ -1,0 +1,1 @@
+Um firewall é um sistema de segurança de rede que monitora e controla o tráfego de rede de entrada e saída com base em regras de segurança predefinidas. 1  Ele atua como uma barreira entre uma rede interna confiável e uma rede externa não confiável, como a internet, protegendo seus dispositivos e dados de ameaças cibernéticas.
